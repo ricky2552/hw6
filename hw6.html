@@ -1,3 +1,69 @@
 <html>
    <head>
-       
+       <style>
+            #title{display: flex;justify-content: center;font-size: 60px;color:darkgreen}
+            .toppings{display: flex;justify-content: space-between;font-size: 25px}
+            .total{display: flex;justify-content: flex-end;font-size: 20px}
+       </style>
+            <script>
+            </script>
+   </head>
+<body>
+    <title>Homework 6</title>
+    <p id="title">Choose your Toppings</p>
+    <p class="toppings">
+        <a> Pepperoni</a>
+        <img src="pepperoni.jpg" width="250" height="153">
+        <a id="para1">$0</a>
+        <button onclick="Pepperoni()">Add</button>
+    </p>
+    <p class="toppings">
+        <a> Mushroom</a>
+        <img src="mushroom.jpg" width="250" height="153">
+        <a id="para2">$0</a>
+        <button onclick="Mushroom()">Add</button>
+    </p>
+    <p class="toppings">
+        <a> Bell Pepper</a>
+        <img src="bell_pepper.jpg" width="250" height="153">
+        <a id="para3">$0</a>
+        <button onclick="Bellpepper()">Add</button>
+    </p>
+    <p class="toppings">
+        <a> Black Olives</a>
+        <img src="black_olives.jpg" width="250" height="153">
+        <a id="para4">$0</a>
+        <button onclick="Blackolive()">Add</button>
+    </p>
+    <p class="toppings">
+       <a> Type in the toppings </a>
+    </p>
+    <ul>
+        <li>Pepperoni</li>
+        <li>Mushroom</li>
+        <li>Bell Pepper</li>
+        <li>Black Olives</li>
+    </ul>
+    <input id="order">
+    <button onclick="Order()">Submit</button>
+    <p class="receipt">Receipt</p>
+    <p class="toppings">
+        <a> Subtotal</a>
+        <a id="total">$0</a>
+        <a class="hide">_______</a>
+    </p>
+    <p class="toppings">
+        <a> Tax (5%)</a>
+        <a id="tax">$0</a>
+        <a class="hide">_______</a>
+    </p>
+    <p class="toppings">
+        <a> Total</a>
+        <a id="sum">$0</a>
+        <button onclick="total()">Update</button>
+    </p>
+    <p class="clear">
+        <button onclick="Clear()">Clear</button>
+    </p>
+</body>
+</html>
